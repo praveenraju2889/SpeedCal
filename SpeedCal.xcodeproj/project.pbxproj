@@ -16,6 +16,10 @@
 		55D133642B67AD0C00AA846A /* SpeedCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D133632B67AD0C00AA846A /* SpeedCalTests.swift */; };
 		55D1336E2B67AD0C00AA846A /* SpeedCalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1336D2B67AD0C00AA846A /* SpeedCalUITests.swift */; };
 		55D133702B67AD0C00AA846A /* SpeedCalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D1336F2B67AD0C00AA846A /* SpeedCalUITestsLaunchTests.swift */; };
+		55D1337E2B67C1CA00AA846A /* digital-7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55D1337D2B67C1CA00AA846A /* digital-7.ttf */; };
+		55D133802B67C2FE00AA846A /* half-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D1337F2B67C2FE00AA846A /* half-circle.png */; };
+		55D133822B67CB3500AA846A /* SpeedAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D133812B67CB3500AA846A /* SpeedAnnotation.swift */; };
+		55D133842B67D03400AA846A /* SpeedAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D133832B67D03400AA846A /* SpeedAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		55D133692B67AD0C00AA846A /* SpeedCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D1336D2B67AD0C00AA846A /* SpeedCalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedCalUITests.swift; sourceTree = "<group>"; };
 		55D1336F2B67AD0C00AA846A /* SpeedCalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedCalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55D1337D2B67C1CA00AA846A /* digital-7.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7.ttf"; sourceTree = "<group>"; };
+		55D1337F2B67C2FE00AA846A /* half-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "half-circle.png"; sourceTree = "<group>"; };
+		55D133812B67CB3500AA846A /* SpeedAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedAnnotation.swift; sourceTree = "<group>"; };
+		55D133832B67D03400AA846A /* SpeedAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		55D1334B2B67AD0A00AA846A /* SpeedCal */ = {
 			isa = PBXGroup;
 			children = (
+				55D1337C2B67C19400AA846A /* Fonts */,
 				55D1334C2B67AD0A00AA846A /* AppDelegate.swift */,
 				55D1334E2B67AD0A00AA846A /* SceneDelegate.swift */,
 				55D133502B67AD0A00AA846A /* ViewController.swift */,
@@ -106,6 +115,8 @@
 				55D133552B67AD0B00AA846A /* Assets.xcassets */,
 				55D133572B67AD0B00AA846A /* LaunchScreen.storyboard */,
 				55D1335A2B67AD0B00AA846A /* Info.plist */,
+				55D133812B67CB3500AA846A /* SpeedAnnotation.swift */,
+				55D133832B67D03400AA846A /* SpeedAnnotationView.swift */,
 			);
 			path = SpeedCal;
 			sourceTree = "<group>";
@@ -125,6 +136,15 @@
 				55D1336F2B67AD0C00AA846A /* SpeedCalUITestsLaunchTests.swift */,
 			);
 			path = SpeedCalUITests;
+			sourceTree = "<group>";
+		};
+		55D1337C2B67C19400AA846A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				55D1337F2B67C2FE00AA846A /* half-circle.png */,
+				55D1337D2B67C1CA00AA846A /* digital-7.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +251,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D133802B67C2FE00AA846A /* half-circle.png in Resources */,
 				55D133592B67AD0B00AA846A /* LaunchScreen.storyboard in Resources */,
 				55D133562B67AD0B00AA846A /* Assets.xcassets in Resources */,
 				55D133542B67AD0A00AA846A /* Main.storyboard in Resources */,
+				55D1337E2B67C1CA00AA846A /* digital-7.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D133842B67D03400AA846A /* SpeedAnnotationView.swift in Sources */,
+				55D133822B67CB3500AA846A /* SpeedAnnotation.swift in Sources */,
 				55D133512B67AD0A00AA846A /* ViewController.swift in Sources */,
 				55D1334D2B67AD0A00AA846A /* AppDelegate.swift in Sources */,
 				55D1334F2B67AD0A00AA846A /* SceneDelegate.swift in Sources */,
@@ -439,6 +463,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpeedCal/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location usge";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow location usage";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to calculate running speed.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -466,6 +493,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpeedCal/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow location usge";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Allow location usage";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to calculate running speed.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
