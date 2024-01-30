@@ -86,7 +86,7 @@ class ViewController: UIViewController ,CLLocationManagerDelegate,MKMapViewDeleg
         annotationView.speedLabel.text = formattedSpeed
 
         // Print statements for debugging
-        print("Speed label text set to: \(String(describing: annotationView.speedLabel.text))")
+        print("Speed label text set to:: \(String(describing: annotationView.speedLabel.text))")
 
         return annotationView
     }
